@@ -15,6 +15,9 @@
 		F9A78D611E07E88100B94368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A78D5F1E07E88100B94368 /* LaunchScreen.storyboard */; };
 		F9A78D6C1E07E88100B94368 /* Protocols_06_HomeWork_03Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A78D6B1E07E88100B94368 /* Protocols_06_HomeWork_03Tests.m */; };
 		F9A78D771E07E88100B94368 /* Protocols_06_HomeWork_03UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A78D761E07E88100B94368 /* Protocols_06_HomeWork_03UITests.m */; };
+		F9A78D891E07F96900B94368 /* Developer.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A78D881E07F96900B94368 /* Developer.m */; };
+		F9A78D8C1E07F97B00B94368 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A78D8B1E07F97B00B94368 /* Student.m */; };
+		F9A78D951E07F9C700B94368 /* SuperMan.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A78D941E07F9C700B94368 /* SuperMan.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,14 @@
 		F9A78D721E07E88100B94368 /* Protocols_06_HomeWork-03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Protocols_06_HomeWork-03UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A78D761E07E88100B94368 /* Protocols_06_HomeWork_03UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Protocols_06_HomeWork_03UITests.m; sourceTree = "<group>"; };
 		F9A78D781E07E88100B94368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A78D871E07F96900B94368 /* Developer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Developer.h; sourceTree = "<group>"; };
+		F9A78D881E07F96900B94368 /* Developer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Developer.m; sourceTree = "<group>"; };
+		F9A78D8A1E07F97B00B94368 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		F9A78D8B1E07F97B00B94368 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		F9A78D931E07F9C700B94368 /* SuperMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperMan.h; sourceTree = "<group>"; };
+		F9A78D941E07F9C700B94368 /* SuperMan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperMan.m; sourceTree = "<group>"; };
+		F9A78D961E08178100B94368 /* HeartAttack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartAttack.h; sourceTree = "<group>"; };
+		F9A78D991E082A4900B94368 /* ResonProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResonProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +112,16 @@
 		F9A78D501E07E88100B94368 /* Protocols_06_HomeWork-03 */ = {
 			isa = PBXGroup;
 			children = (
+				F9A78D961E08178100B94368 /* HeartAttack.h */,
+				F9A78D991E082A4900B94368 /* ResonProtocol.h */,
 				F9A78D541E07E88100B94368 /* AppDelegate.h */,
 				F9A78D551E07E88100B94368 /* AppDelegate.m */,
+				F9A78D871E07F96900B94368 /* Developer.h */,
+				F9A78D881E07F96900B94368 /* Developer.m */,
+				F9A78D8A1E07F97B00B94368 /* Student.h */,
+				F9A78D8B1E07F97B00B94368 /* Student.m */,
+				F9A78D931E07F9C700B94368 /* SuperMan.h */,
+				F9A78D941E07F9C700B94368 /* SuperMan.m */,
 				F9A78D571E07E88100B94368 /* ViewController.h */,
 				F9A78D581E07E88100B94368 /* ViewController.m */,
 				F9A78D5A1E07E88100B94368 /* Main.storyboard */,
@@ -273,7 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A78D951E07F9C700B94368 /* SuperMan.m in Sources */,
+				F9A78D891E07F96900B94368 /* Developer.m in Sources */,
 				F9A78D591E07E88100B94368 /* ViewController.m in Sources */,
+				F9A78D8C1E07F97B00B94368 /* Student.m in Sources */,
 				F9A78D561E07E88100B94368 /* AppDelegate.m in Sources */,
 				F9A78D531E07E88100B94368 /* main.m in Sources */,
 			);

@@ -7,6 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "HeartAttack.h"
+#import "ResonProtocol.h"
+#import "Developer.h"
+#import "Student.h"
+#import "SuperMan.h"
+
+
 
 @interface AppDelegate ()
 
@@ -17,6 +24,69 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    Developer *dev1 = [[Developer alloc]init];
+    Developer *dev2 = [[Developer alloc]init];
+    Developer *dev3 = [[Developer alloc]init];
+    
+    dev1.name = @"Aleks";
+    dev1.symptoms = @"боль в груди";
+    dev1.yourAge = 23;
+    
+    dev2.name = @"Aik";
+    dev2.symptoms = @"бежал и начал задыхаться";
+    dev2.yourAge = 53;
+    
+    dev3.name = @"Rik";
+    dev3.symptoms = @"холодный пот на лице";
+    dev3.yourAge = 43;
+    
+    Student *stud1 = [[Student alloc]init];
+    Student *stud2 = [[Student alloc]init];
+    
+    stud1.name = @"Morti";
+    stud1.symptoms = @"начал задыхаться";
+
+    stud2.name = @"Jeki";
+    stud2.symptoms = @"пот на лице";
+    
+    SuperMan *superMan = [[SuperMan alloc]init];
+    
+    superMan.name = @"Klark";
+    superMan.symptoms = @"мне просто скучно";
+
+
+    NSArray *array = @[dev1, dev2, dev3, stud1, stud2, superMan];
+    for (id <HeartAttack, ResonProtocol> obj in array) {
+        if ([obj conformsToProtocol:@protocol(HeartAttack)]) {
+            
+            NSLog(@"Ваше имя? -%@", obj.name);
+            
+            NSLog(@"Ваши симптомы? -%@", obj.symptoms);
+            
+            if ([obj respondsToSelector: @selector(yourAge)]) {
+                NSLog(@"Ваш возраст? -%d", obj.yourAge);
+            }
+            if ([obj isAssistanceRequired]) {
+                [obj takePill];
+                if (![obj isOk]) {
+                    [obj hospitalization];
+                    if ([obj respondsToSelector:@selector(isToCallTheFamaily)]) {
+                        [obj isToCallTheFamaily];
+                    }
+                }
+            }
+            if ([obj respondsToSelector:@selector(protocolResone)]) {
+                [obj protocolResone];   // если объект имеет selectro protocolResone, в моем случае он еще из другого протокола, то мы его выполним
+            }
+            
+        } else {
+            NSLog(@"скучающий SuperMan");
+        }
+        NSLog(@"==============");
+    }
+
+
+    
     return YES;
 }
 
